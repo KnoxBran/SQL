@@ -1,0 +1,23 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity_type TEXT, category TEXT);
+
+
+INSERT INTO store VALUES 
+(1, "T-shirt", 20, "EA", "merch"),
+(2, "socks", 10, "3pk", "merch"),
+(3, "lacrosse ball", 3, "EA", "fitness"),
+(4, "wraps", 10, "2pk", "fitness"),
+(5, "tank top", 15, "EA", "merch"),
+(6, "gloves", 20, "2pk", "fitness"),
+(7, "foam roller", 10, "EA", "fitness"),
+(8, "tombstone pad", 17, "EA", "fitness"),
+(9, "coffee mug", 10, "EA", "merch"),
+(10, "sticker", 3, "EA", "merch"),
+(11, "gym bag", 12, "EA", "merch"),
+(12, "shin guards", 25, "2pk", "fitness"),
+(13, "sweatshirt", 20, "EA", "merch"),
+(14, "headband", 7, "EA", "merch"),
+(15, "yoga mat", 20, "EA", "fitness");
+
+SELECT * FROM store ORDER BY price;
+SELECT name, MAX(price) FROM store;
+
